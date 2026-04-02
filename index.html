@@ -53,7 +53,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 </style>
 </head>
 <body>
-<div class="header"><div class="header-left"><div class="logo-circle">🎓</div><div class="header-title"><small>(School Name)</small><h1>SAT Question of the Day</h1></div></div><div style="display:flex;align-items:center;gap:10px"><div class="score-badge">Score: <span class="correct" id="scoreCorrect">0</span> / <span class="total" id="scoreTotal">0</span></div><button class="info-btn" onclick="resetScore()" title="Reset Score">↺</button></div></div>
+<div class="header"><div class="header-left"><div class="logo-circle">🎓</div><div class="header-title"><small></small><h1>SAT Question of the Day</h1></div></div><div style="display:flex;align-items:center;gap:10px"><div class="score-badge">Score: <span class="correct" id="scoreCorrect">0</span> / <span class="total" id="scoreTotal">0</span></div><button class="info-btn" onclick="resetScore()" title="Reset Score">↺</button></div></div>
 <div class="toolbar"><div class="dropdown-wrap"><select id="questionSelect" onchange="goToQuestion(this.value)"></select></div><div class="timer-section"><button class="timer-preset active" data-time="300" onclick="setTimer(300,this)">5:00</button><div class="timer-display" id="timerDisplay">5:00</div><button class="btn-go" id="btnGo" onclick="toggleTimer()">▶ Go</button><button class="btn-reset-timer" onclick="resetTimer()" title="Reset Timer">⟲</button></div></div>
 <div class="main">
 <div class="q-meta"><div class="q-meta-left"><span class="q-number" id="qNumber"></span><span class="q-tag" id="qTag"></span><span class="q-diff" id="qDiff"></span></div><span class="q-source" id="qSource"></span></div>
